@@ -221,3 +221,220 @@ public class SupplierTest {
     }
 }
 ~~~
+
+### 2) Function 함수적 인터페이스
+- 역할: 매핑(타입변환)하기
+- 메서드 : applyXXX()
+- 예를들어 List 항목중에서 int 값을 추출하거나 다른 타입으로 변환하는 등의 작업에 사용한다
+- 앞서 실행한 함수적 인터페이스의 결과값이 다음 함수적 인터페이스의 인자값으로 할당되어 최종값을 도출한다.
+
+Function T,U - T 받아서 U 리턴
+
+BiFunction T,U,R - T , U 형태를 받아서 R 리턴
+
+XXXFunction T - XXX 받아서 T 리턴
+
+XXXtoYYYFunction - XXX 받아서 YYY 리턴
+
+toXXXFunction T - T 받아서 XXX 리턴
+
+toXXXBiFunction T,U - T , U 받아서 XXX 리턴
+
+~~~java
+import java.util.function.*;
+
+public class Test01 {
+    class Student {
+        private int stuNum;
+        private String stuName;
+        private int math;
+        private int english;
+
+        Student(int stuNum, String stuName, int math, int english) {
+            this.stuNum = stuNum;
+            this.stuName = stuName;
+            this.math = math;
+            this.english = english;
+        }
+    }
+
+    public static void main(String[] args) {
+        Test01 test = new Test01();
+        Student st1 = test.new Student(123, "홍길동", 11,36);
+
+        // 매핑 : Student 객체 - Student의 Integer 값
+        Function<Student, Integer> function = a -> a.stuNum;
+        int result01 = function.apply(st1);
+        System.out.println("홍길동 번호 :" + result01);
+
+        // 매핑 : 두 Integer 값 - Double 값
+        BiFunction<Integer, Integer, Double> biFunction = (a, b) -> (double) (a+b)/2;
+        double result02 = biFunction.apply(st1.math, st1.english);
+        System.out.println("두 숫자 평균 :" + result02);
+
+        // 매핑 : Double 값 - Integer 값
+        DoubleFunction<Integer> doubleFunction = a -> {
+            Double d = Math.floor(a); // 소수점 버리기
+            return d.intValue();
+        };
+        int result03 = doubleFunction.apply(246.71);
+        System.out.println("소수점 버리기 : " + result03);
+
+        // 매핑 : Integer, Integer - Double
+        ToDoubleBiFunction<Integer, Integer> toDoubleBiFunction;
+        toDoubleBiFunction = (math, english) -> (double)(math+english)/2;
+        double result04 = toDoubleBiFunction.applyAsDouble(st1.math, st1.english);
+        System.out.println("홍길동의 수학 영어 평균 : " + result04);
+
+    }
+}
+~~~
+
+### function 난이도 올리기
+
+
+
+### Operator 함수적 인터페이스
+- 역할 : 매개값 계산해서 리턴하기
+- 메서드 : applyXXX()
+- 매개값으로 연산을 수행뒤 동일한 타입으로 
+
+UnaryOprater T - T타입 연산하고 리턴
+
+BinaryOperator T - T타입 연산하고 리턴
+
+XXXUnaryOperator - XXX 타입 1개 연산
+
+XXXBinaryOperator - XXX 타입 2개 연산
+
+* unary 단항(연산이 1개), binary 이항(연산이 2개)
+
+~~~java
+import java.util.function.IntBinaryOperator;
+import java.util.function.IntUnaryOperator;
+import java.util.function.UnaryOperator;
+
+// Operator 인터페이스를 활용해 최댓값, 제곱값, 온도단위 바꾸기 등을 연산한다.
+public class Test03 {
+    int[] numbers = {3, 1, 7, 6, 5};
+    double[] celciousArr = {25, 37, 100, 0};
+
+    //함수적 인터페이스를 받아최댓값을 구하는 메서드
+    int getMax(IntBinaryOperator operator) {
+        int result = numbers[0];
+        //int[] 반복 돌면서 지정한 operator 연산수행 -> 연산결과 리턴
+        for(int number : numbers) {
+            result = operator.applyAsInt(result, number);
+        }
+        return result;
+    }
+
+    // 함수적 인터페이스를 받아 제곱값을 구하는 메서드
+    int[] getSquare(IntUnaryOperator operator) {
+        int[] intArr = new int[numbers.length];
+
+        for(int i = 0; i < numbers.length; i++) {
+            intArr[i] = operator.applyAsInt(numbers[i]);
+        }
+        return intArr;
+    }
+
+    void getSumOfMultiple(UnaryOperator<Double> operator) {
+        int sum = 0;
+        for(double celcious : celciousArr) {
+            double fahrenheit = operator.apply(celcious);
+            System.out.println(fahrenheit + " ");
+        }
+    }
+
+    public static void main(String[] args) {
+        Test03 test = new Test03();
+
+        //연산식 설정
+        int max = test.getMax(
+                (a, b) -> {
+                    int number = a;
+                    if (a < b) number = b;
+                    return number;
+                }
+        );
+        System.out.println("최댓값 : " + max);
+
+        //연산식 설정 - 제곱값
+        System.out.print("제곱값 : ");
+        int[] intArr = test.getSquare( a -> a*a );
+        for(int d : intArr){
+            System.out.print(d + " ");
+        }
+
+        //연산식 설정 - 섭씨, 화씨 바꾸기
+        System.out.print("\n섭씨 화씨 바꾸기 : ");
+        test.getSumOfMultiple(a -> a*9/5 + 32);
+    }
+
+}
+~~~
+
+### Predicate 함수적 인터페이스
+- 역할 : 매개값 확인해서 boolean(true/false) 값 리턴
+- 메서드 : test()
+
+Predicate T - T를 받아 boolean 리턴
+BiPredicate T U - T , U를 받아 boolean 리턴
+XXXPredicate - XXX를 받아 boolean 리턴
+
+~~~java
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Predicate;
+
+public class Test04 {
+    private List<Student> list;
+    private enum Gender { MALE, FEMALE }
+
+    class Student {
+        private String name;
+        private Gender gender;
+        private int score;
+
+        Student(String name, Gender gender, int score) {
+            this.name = name;
+            this.gender = gender;
+            this.score = score;
+        }
+    }
+
+    public static void main(String[] args) {
+        Test04 test = new Test04();
+
+        test.list = Arrays.asList(
+                test.new Student("박효신", Gender.MALE, 15),
+                test.new Student("김윤아", Gender.FEMALE, 30),
+                test.new Student("민경훈", Gender.MALE, 35),
+                test.new Student("장혜진", Gender.FEMALE, 30)
+        );
+
+        //남성 평균점수 구하기
+        Predicate<Student> predicate_male = t -> t.gender.equals(Gender.MALE);
+        double avgOfMale = test.getAverage(predicate_male);
+        System.out.println("남성점수평균 : " + avgOfMale);
+
+        //60점 이상일 경우 평균 구하기
+        Predicate<Student> predicate_sixty = t -> t.score >= 60;
+        double avgOver60 = test.getAverage(predicate_sixty);
+        System.out.println("60점이상평균 : " + avgOver60);
+    }
+
+    private double getAverage(Predicate<Student> predicate){
+        int count = 0;
+        int sum = 0;
+        for (Student stu : list){
+            if(predicate.test(stu)){
+                count++;
+                sum += stu.score;
+            }
+        }
+        return (double) sum/count;
+    }
+}
+~~~
