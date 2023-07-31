@@ -1,4 +1,4 @@
 # 김영한님 java spring
 
 # 입문편
-- [식별자 작성 규칙](https://github.com/Hoonyyyy/TIL/blob/main/JAVA/%EC%8B%9D%EB%B3%84%EC%9E%90%20%EC%9E%91%EC%84%B1%20%EA%B7%9C%EC%B9%99.MD#%EC%8B%9D%EB%B3%84%EC%9E%90-%EC%9E%91%EC%84%B1-%EA%B7%9C%EC%B9%99)
+- [스프링 입문](https://github.com/Hoonyyyy/Inflearn_Spring_YH/blob/main/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%94%84%EB%A7%81%EA%B3%B5%EB%B6%80/%EC%8A%A4%ED%94%84%EB%A7%81%EC%9E%85%EB%AC%B8.md#start)
