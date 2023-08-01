@@ -15,4 +15,4 @@
 
 # 모든 개발자를 위한 HTTP 웹 기본 지식
 - [Section_1, ip dns 등](https://github.com/Hoonyyyy/Inflearn_Spring_YH/blob/main/%EB%AA%A8%EB%93%A0%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20HTTP%20%EC%9B%B9%20%EA%B8%B0%EB%B3%B8%20%EC%A7%80%EC%8B%9D/Section_1.MD#section_1)
-- [Section_2](https://github.com/Hoonyyyy/Inflearn_Spring_YH/blob/main/%EB%AA%A8%EB%93%A0%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20HTTP%20%EC%9B%B9%20%EA%B8%B0%EB%B3%B8%20%EC%A7%80%EC%8B%9D/Section_2.MD#section_2)
+- [Section_2, URI](https://github.com/Hoonyyyy/Inflearn_Spring_YH/blob/main/%EB%AA%A8%EB%93%A0%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20HTTP%20%EC%9B%B9%20%EA%B8%B0%EB%B3%B8%20%EC%A7%80%EC%8B%9D/Section_2.MD#section_2)
