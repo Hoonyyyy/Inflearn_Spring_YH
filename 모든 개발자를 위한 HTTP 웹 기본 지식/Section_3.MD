@@ -78,7 +78,7 @@
 ### 비 연결성 한계와 극복
   - TCP/IP 연결을 새로 맺어야 함 - 3 way handshake 시간 추가
   - 웹 브라우저로 사이트를 요청하면 HTML 뿐만 아니라 자바스크립트, css, 추가 이미지 등등 수 많은 자원이 함께 다운로드
-  - 지금은 ***HTTP 지속 연결(Persistent Conections)***로 문제 해결
+  - 지금은 HTTP 지속 연결(Persistent Conections) 로 문제 해결
   - Http2,3에서는 더욱 최적화
 
 
