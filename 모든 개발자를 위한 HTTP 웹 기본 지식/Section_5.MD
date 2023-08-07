@@ -93,11 +93,19 @@
   - 여기서 스토어는 /files
 
 
+## HTML FORM 사용
+- HTML FORM은 GET, POST만 사용
+- AJAX 같은 기술을 사용해서 해결 가능 -> 회원 API 참고
+- 여기서는 순수 HTML, HTML FORM 이야기
+- 컨트롤 URI
+- GET, POST만 지원하므로 제약 있음
+- 이런 제약을 해결하기 위해 동사로 된 리소스 경로 사용
+- POST의 /new, /edit, /delete가 컨트롤 URI
+- HTTP 메서드로 해결하기 애매한 경우 사용(HTTP API 포함)
 
-
-
-
-
+## 정리
+- 참고하면 좋은 URI 설계 개념
+- https://restfulapi.net/resource-naming 
 
 
 
