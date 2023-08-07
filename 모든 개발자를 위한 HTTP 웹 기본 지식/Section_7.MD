@@ -53,9 +53,27 @@
   - Accept-Encoding : 클라이언트가 선호하는 압축 인코딩
   - Accept-Language : 클라이언트가 선호하는 자연 언어
 
+### 협상과 우선순위1 ( Quality Values(q) )
+- Quality Values(q) 값 사용
+- 0~1, 클수록 높은 우선순위
+- 생략하면 1
+- Accept-Language : ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+  - 1. ko-KR;q=1 (q생략)
+  - 2. ko;q=0.9
+  - 3. en-US;q=0.8
+  - 4. en:q=0.7
 
+### 협상과 우선순위2 ( Quality Values(q) )
+- 구체적인 것이 우선한다!!!
+- Accept: text/*, text/plain, text/plain;format=flowed, */*
+  - text/plain;format-flowed
+  - text/plain
+  - text/*
+  - */*
 
-
+### 협상과 우선순위3 ( Quality Values(q) )
+- 구체적인 것을 기준으로 미디어 타입을 맞춘다.
+- 보통 여기까지는 안옴
 
 
 
