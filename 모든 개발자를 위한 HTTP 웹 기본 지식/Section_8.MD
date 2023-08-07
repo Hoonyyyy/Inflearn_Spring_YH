@@ -68,9 +68,42 @@
 - 예
   - 서버는 베타 오픈 기간인 3일 동안 파일이 변경되어도 ETAg를 유지
 
+# 캐시 제어 헤더
+- Cache-COntrol : 캐시 제어
+- Pragma : 캐시 제어(하위 호환)
+- Expires : 캐시 유효 기간(하위 호환)
 
+## Cache-Control (제일 중요)(캐시 지시어 directives)
+- Cachec-COntrol : max-age
+  - 캐시 유효 시간, 초 단위
+- Cache-Control : no-cache
+  - 데이터는 캐시해도 되지만, 항상 원(origin) 서버에 검증하고 사용
+- Cachec-Control : no-store
+  - 데이터에 민감한 정보가 있으므로 저장하면 안됨(메모리에서 사용하고 최대한 빨리 삭제)
 
+### Cache-Control ( 캐시 지시어(directives) - 기타 )
+- Cache-COntrol : public
+  - 응답이 public 캐시에 저장되어도 됨
+- Cache-Cㅐntrol : private
+  - 응답이 해당 사용자만을 위한 것임, private 캐시에 저장해야 함(기본값)
+- 아래 두개는 있다~~~ 정도
+- Cache-control : s-maxage
+  - 프록시 캐시에만 적용되는 max-age
+- Age: 60 (HTTP 헤더)
+  - 오리진 서버에서 응답 후 프록시 캐시 내에 머문 시간(초)
 
+## Pragma(캐시제어 하위호환)
+- 지금은 거의 사용하지 않음
+
+## Expires (캐시 만료일 지정, 하위호환)
+- 캐시 만료일을 정확한 날짜로 지정
+- 얘가 좋아보이지만.. 실제로보면 캐쉬컨트롤로 시간을 해주는게 좋음
+- 캐시 컨트롤이랑 expires 사용하면 expires는 무시 됨
+
+# 프록시 캐시
+원서버미국 - 프록시캐시((한국 어딘가..))에 있는 캐시 서버를 우리나라에서 보는것 그러니까 빠름
+
+# 캐시 무효화
 
 
 
