@@ -77,8 +77,78 @@
 
 
 
+## 전송 방식
+- 단순 전송
+- 압축 전송
+- 분할 전송
+- 범위 전송
 
+### 단순 전송
+- Content-Length
 
+### 압축 전송
+- Content-Length
+- 절반 이상 줄어드는 경우가 많음
+
+### 분할 전송
+- Transfer-Encoding
+- Content-Length 넣으면 안됨! 예상이 안됨
+
+### 범위 전송
+- Range, Content-Range
+
+## 일반 정보
+
+### From (유저 에이전트 이메일 정보)
+- 잘 사용 안함
+- 검색 엔진 같은 곳에서, 주로 사용
+
+### Referer (이전 웹 페이지 주소)
+- 현재 요청된 페이지 이전 주소
+- Referer를 사용해서 유입 경로 분석 가능
+- 참고 : referer는 단어 referrer의 오타
+
+### User-Agent (유저 에이전트 애플리케이션 정보)
+- 통계 정보
+- 클라이언트의 애플리케이션 정보
+
+### Server (요청을 처리하는 ORIGIN 서버의 소프트웨어 정보)
+- Server: Apache/2.2.22 (Debian)
+- server : nginx
+- 응답에서 사용
+
+### Date(메시지가 발생한 날짜와 시간)
+- 응답에서 사용
+
+## 특별한 정보
+
+### Host( 요청한 호스트정보(도메인) )
+- 요청에서 사용
+- 필수
+- 하나의 서버가 여러 도메인을 처리해야 할 때
+
+### Location (페이지 리다이렉션)
+- 웹 브라우저는 3xx 응답의 결과에 Location 헤더가 있으면, Location 위치로 자동 이동(리다이렉트)
+- 응답코드 3xx에서 설명
+- 201 (Created) : Location 값은 요청에 의해 생성된 리소스 URI
+- 3xx (Redirection) : Location 값은 요청을 자동으로 리다이렉션하기 위한 대상 리소스를 가리킴
+
+### Allow (허용 가능한 HTTP 메서드)
+- 405(Method Not Allowed)에서 응답에 포함해야함
+- Allow: GET, HEAD, PUT
+- 서버에서 별로 구현되어 있지 않음
+
+### Retry-After (유저 에이전트가 다음 요청을 하기까지 기다려야 하는 시간)
+- 503(Service Unavailable) : 서비스가 언제까지 불능인지 알려줄 수 있음
+- 사용하기 쉽지않음
+
+## 인증
+
+### Authorization (클라이언트 인증 정보를 서버에 전달)
+
+### WWW_Authenticate (리소스 접근시 필요한 인증 방법 정의)
+
+# 쿠키
 
 
 
