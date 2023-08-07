@@ -23,3 +23,8 @@
 - [Section_6, HTTP 상태코드 2xx, 3xx 등](https://github.com/Hoonyyyy/Inflearn_Spring_YH/blob/main/%EB%AA%A8%EB%93%A0%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20HTTP%20%EC%9B%B9%20%EA%B8%B0%EB%B3%B8%20%EC%A7%80%EC%8B%9D/Section_6.MD#http-%EC%83%81%ED%83%9C%EC%BD%94%EB%93%9C)
 - [Section_7, HTTP 헤더1 - 일반헤더](https://github.com/Hoonyyyy/Inflearn_Spring_YH/blob/main/%EB%AA%A8%EB%93%A0%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20HTTP%20%EC%9B%B9%20%EA%B8%B0%EB%B3%B8%20%EC%A7%80%EC%8B%9D/Section_7.MD#http-%ED%97%A4%EB%8D%941---%EC%9D%BC%EB%B0%98-%ED%97%A4%EB%8D%94)
 - [Section_8, HTTP 헤더2 - 캐시와 조건부 요청](https://github.com/Hoonyyyy/Inflearn_Spring_YH/blob/main/%EB%AA%A8%EB%93%A0%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20HTTP%20%EC%9B%B9%20%EA%B8%B0%EB%B3%B8%20%EC%A7%80%EC%8B%9D/Section_8.MD#section_8)
+
+
+# 스프링 MVC 1편 - 백엔드 웹 개발 핵심 기술
+## section1
+- [웹 서버, 웹 애플리케이션 서버](https://github.com/Hoonyyyy/Inflearn_Spring_YH/blob/main/%EC%8A%A4%ED%94%84%EB%A7%81%20MVC1%ED%8E%B8%20-%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%9B%B9%20%EA%B0%9C%EB%B0%9C%20%ED%95%B5%EC%8B%AC%20%EA%B8%B0%EC%88%A0/%EC%9B%B9%20%EC%84%9C%EB%B2%84%2C%20%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%20%EC%84%9C%EB%B2%84.MD#%EC%9B%B9-%EC%84%9C%EB%B2%84-%EC%9B%B9-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%84%9C%EB%B2%84)
