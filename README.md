@@ -45,7 +45,8 @@ ion$DefaultTemplateResolverConfiguration
 - [스프링 MVC 전체구조](https://github.com/Hoonyyyy/Inflearn_Spring_YH/blob/main/%EC%8A%A4%ED%94%84%EB%A7%81%20MVC1%ED%8E%B8%20-%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%9B%B9%20%EA%B0%9C%EB%B0%9C%20%ED%95%B5%EC%8B%AC%20%EA%B8%B0%EC%88%A0/%EC%8A%A4%ED%94%84%EB%A7%81%20MVC%20%EC%A0%84%EC%B2%B4%EA%B5%AC%EC%A1%B0.MD#%EC%8A%A4%ED%94%84%EB%A7%81-mvc-%EC%A0%84%EC%B2%B4%EA%B5%AC%EC%A1%B0)
 - [HTTP Message Conveter](https://github.com/Hoonyyyy/Inflearn_Spring_YH/blob/main/%EC%8A%A4%ED%94%84%EB%A7%81%20MVC1%ED%8E%B8%20-%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%9B%B9%20%EA%B0%9C%EB%B0%9C%20%ED%95%B5%EC%8B%AC%20%EA%B8%B0%EC%88%A0/HTTP%20%EB%A9%94%EC%8B%9C%EC%A7%80%20%EC%BB%A8%EB%B2%84%ED%84%B0.MD#http-%EB%A9%94%EC%8B%9C%EC%A7%80-%EC%BB%A8%EB%B2%84%ED%84%B0)
 
-
+# 스프링 MVC 2편 - 백엔드 웹 개발 활용기술
+- [Thymeleaf 소개](https://github.com/Hoonyyyy/Inflearn_Spring_YH/blob/main/%EC%8A%A4%ED%94%84%EB%A7%81%20MVC%202%ED%8E%B8%20-%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%9B%B9%20%EA%B0%9C%EB%B0%9C%20%ED%99%9C%EC%9A%A9%20%EA%B8%B0%EC%88%A0/Thymeleaf%20%EC%86%8C%EA%B0%9C.MD#thymeleaf-%EC%86%8C%EA%B0%9C)
 
 
 
