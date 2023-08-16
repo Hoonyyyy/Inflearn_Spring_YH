@@ -3,7 +3,8 @@
 ## 실행 전 해야 할것
 - IntelliJ settings에서 Annotation 체크
 - gradle(intellij, intellij 바꾸기)
-- Directory Mappings -
+- Directory Mappings
+- Encoding utf-8 설정
 ```
 ion$DefaultTemplateResolverConfiguration
 
