@@ -61,4 +61,5 @@ kill -9 [PID number]
 
 # 스프링 DB 1편 - 데이터 접근 핵심 원리
 - [JDBC의 이해](https://github.com/Hoonyyyy/Inflearn_Spring_YH/blob/main/%EC%8A%A4%ED%94%84%EB%A7%81%20DB%201%ED%8E%B8%20-%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%A0%91%EA%B7%BC%20%ED%95%B5%EC%8B%AC%20%EC%9B%90%EB%A6%AC/JDBC%20%EC%9D%B4%ED%95%B4.MD#jdbc-%EC%9D%B4%ED%95%B4)
+- [트랜잭션](https://github.com/Hoonyyyy/Inflearn_Spring_YH/blob/main/%EC%8A%A4%ED%94%84%EB%A7%81%20DB%201%ED%8E%B8%20-%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%A0%91%EA%B7%BC%20%ED%95%B5%EC%8B%AC%20%EC%9B%90%EB%A6%AC/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98.MD#%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98)
 
