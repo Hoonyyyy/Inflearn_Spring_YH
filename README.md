@@ -68,4 +68,6 @@ kill -9 [PID number]
 
 - [JPA와 모던 자바 데이터 저장 기술](https://github.com/Hoonyyyy/Inflearn_Spring_YH/blob/main/%EC%8A%A4%ED%94%84%EB%A7%81%20DB%202%ED%8E%B8%20-%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%A0%91%EA%B7%BC%20%ED%99%9C%EC%9A%A9%20%EA%B8%B0%EC%88%A0/JPA%EC%99%80%20%EB%AA%A8%EB%8D%98%20%EC%9E%90%EB%B0%94%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%A0%80%EC%9E%A5%20%EA%B8%B0%EC%88%A0.MD#jpa%EC%99%80-%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%80%EC%9E%A5-%EA%B8%B0%EC%88%A0)
 
-
+# 실전! 스프링 부트와 JPA 활용1
+- []()
+  
