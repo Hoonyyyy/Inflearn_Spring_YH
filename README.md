@@ -73,5 +73,6 @@ kill -9 [PID number]
   
 # 자바 ORM 표준 JPA 프로그래밍-기본편
 - [강좌 소개](https://github.com/Hoonyyyy/Inflearn_Spring_YH/blob/main/%EC%9E%90%EB%B0%94%20ORM%ED%91%9C%EC%A4%80%20JPA%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%ED%8E%B8/%EA%B0%95%EC%A2%8C%20%EC%86%8C%EA%B0%9C.MD#%EA%B0%95%EC%A2%8C-%EC%86%8C%EA%B0%9C)
+- [JPA 소개](https://github.com/Hoonyyyy/Inflearn_Spring_YH/blob/main/%EC%9E%90%EB%B0%94%20ORM%ED%91%9C%EC%A4%80%20JPA%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8%ED%8E%B8/JPA%20%EC%86%8C%EA%B0%9C.MD#jpa-%EC%86%8C%EA%B0%9C)
 
-  
+
