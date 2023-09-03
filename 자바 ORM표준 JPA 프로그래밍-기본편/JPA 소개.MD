@@ -52,6 +52,17 @@
   - JPA와 연관관계, 객체 그래프 탐색
   - 신뢰할 수 있는 엔티티, 계층
   - JPA와 비교하기
+    - 동일한 트랜잭션!!에서 가능
+  - JPA 성능 최적화 기능
+    - 1차 캐시와 동일성(identity) 보장
+      - 같은 트랜잭션 안에서는 같은 엔티티를 반환 (약간의 조회 성능 향상)
+      - DB Isolation Level이 Read Commit이어도 애플리케이션에서 Repeatable Read 보장
+    - 트랜잭션을 지원하는 쓰기 지연(transaction write-behind)
+      - 트랜잭션을 커밋할 때까지 INSERT SQL을 모음
+      - JDBC BATCH SQL 기능을 사용해서 한번에 SQL 전송 (네트워크 연결 비용 줄어듬)
+    - 지연 로딩(Lazy Loading)
+      - 지연 로딩 : 객체가 실제 사용될 때 로딩
+      - 즉시 로딩 : JOIN SQL로 한번에 연관된 객체까지 미리 조회
 - 성능
 - 데이터 접근 추상화와 벤더 독립성
 - 표준
